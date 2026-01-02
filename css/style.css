@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-    color: #ff0000;
+    color: #0a1aff;
 }
 
 header {
@@ -35,7 +35,7 @@ nav a {
 
 section {
     background-color: #000000;
-    border: 2px solid #ff0000;
+    border: 2px solid #0a1aff;
     border-radius: 10px;
     padding: 24px;
     margin: 24px 0;
@@ -54,7 +54,7 @@ h2 {
 footer {
     text-align: center;
     padding: 20px 0;
-    border-top: 2px solid #ff0000;
+    border-top: 2px solid #0a1aff;
     font-size: 0.8em;
 }
 
