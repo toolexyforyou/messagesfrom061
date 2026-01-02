@@ -73,3 +73,28 @@ footer {
         margin: 10px 0;
     }
 }
+
+article {
+    margin: 40px 0;
+    text-align: center;
+}
+
+article h3 {
+    font-size: 1.3rem;
+    margin: 18px 0;
+}
+
+article h3::before,
+article h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    margin: 16px 0;
+}
+
+article p {
+    text-align: left;
+    margin-top: 20px;
+}
