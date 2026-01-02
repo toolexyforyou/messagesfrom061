@@ -4,10 +4,19 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: 'Press Start 2P', cursive;
-    line-height: 1.8;
+    line-height: 1.4;
     max-width: 900px;
     margin: auto;
     padding: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000;
 }
 
 header {
@@ -16,64 +25,47 @@ header {
 }
 
 header h1 {
-    color: #ffffff;
     margin: 0;
     font-size: 2em;
 }
 
 nav a {
-    color: #ffffff;
     margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s;
-}
-
-nav a:hover {
-    color: #ff0000;
 }
 
 section {
     background-color: #000000;
     border: 2px solid #ff0000;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 25px 0;
-    box-shadow: 0 4px 8px rgba(255,0,0,0.1);
-    color: #ffffff;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(255,0,0,0.2);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 24px 0;
 }
 
 section p {
-    margin-bottom: 15px;
+    line-height: 1.45;
+    margin-bottom: 14px;
 }
 
 h2 {
-    color: #ffffff;
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1.4em;
+    margin-bottom: 16px;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
     border-top: 2px solid #ff0000;
-    font-size: 0.9em;
-    color: #ffffff;
+    font-size: 0.8em;
 }
 
 @media (max-width: 600px) {
     section {
-        padding: 15px;
-        margin: 15px 0;
+        padding: 16px;
+        margin: 16px 0;
     }
+
     nav a {
         display: block;
-        margin: 8px 0;
+        margin: 10px 0;
     }
 }
