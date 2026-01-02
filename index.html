@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messages from 061</title>
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #fefefc;
+            color: #000000;
+            font-family: 'Ranchers', cursive;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px;
+            text-align: center;
+        }
+
+        header {
+            padding: 32px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        #message-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        #message-list a {
+            display: block;
+            width: fit-content;
+            padding: 14px 28px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        #message-list a:hover {
+            background-color: #000000;
+            color: #fefefc;
+        }
+
+        section {
+            background-color: #fefefc;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            padding: 26px;
+            margin: 32px 0;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 18px;
+        }
+
+        .profile-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 16px;
+        }
+
+        footer {
+            padding: 24px 0;
+            border-top: 2px solid #000000;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,48 +90,37 @@
 
 <section>
     <h2>Messages</h2>
-    <ul id="message-list">
-        <li><a href="messages/the-last-bite.html">The last bite</a></li>
-        <li><a href="messages/russian-roulette.html">Russian roulette</a></li>
-        <li><a href="messages/eyes-wide-shut.html">Eyes wide shut</a></li>
-        <li><a href="messages/she-cant-run.html">She can't run</a></li>
-        <li><a href="messages/i-want-to-be-somebody-to-you.html">I want to be somebody to you</a></li>
-        <li><a href="messages/jack-shit.html">Jack shit</a></li>
-    </ul>
+    <nav id="message-list">
+        <a href="messages/the-last-bite.html">The last bite</a>
+        <a href="messages/russian-roulette.html">Russian roulette</a>
+        <a href="messages/eyes-wide-shut.html">Eyes wide shut</a>
+        <a href="messages/she-cant-run.html">She can't run</a>
+        <a href="messages/i-want-to-be-somebody-to-you.html">I want to be somebody to you</a>
+        <a href="messages/jack-shit.html">Jack shit</a>
+    </nav>
 </section>
-    
+
 <section id="about">
     <h2>About</h2>
-
-    <div style="text-align: center;">
-        <img
-            src="https://github.com/toolexyforyou.png"
-            alt="Profile photo"
-            style="
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
-                object-fit: cover;
-                display: block;
-                margin: 0 auto 16px auto;
-            "
-        >
-    </div>
-
+    <img
+        src="https://github.com/toolexyforyou.png"
+        alt="Profile photo"
+        class="profile-photo"
+    >
     <p>
         I'm @toolexyforyou. I’ve always been passionate about both consuming and creating media. So I created “Messages from 061” to house my raw poetry collection, capturing my lived experiences.
     </p>
 </section>
-    
+
 <footer>
     <p>© 2026 toolexyforyou. All rights reserved.</p>
 </footer>
 
 <script>
-const list = document.getElementById('message-list');
-const items = Array.from(list.getElementsByTagName('li'));
-items.sort((a, b) => a.textContent.localeCompare(b.textContent));
-items.forEach(item => list.appendChild(item));
+const nav = document.getElementById('message-list');
+const links = Array.from(nav.getElementsByTagName('a'));
+links.sort((a, b) => a.textContent.localeCompare(b.textContent));
+links.forEach(link => nav.appendChild(link));
 </script>
 
 </body>
