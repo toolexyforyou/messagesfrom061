@@ -63,17 +63,6 @@ h2 {
     color: #000000;
 }
 
-section p {
-    font-family: 'Ranchers', cursive;
-    font-size: 1.15rem;
-    line-height: 1.8;
-    font-style: normal;
-    text-align: left;
-    color: #000000;
-    margin-bottom: 16px;
-    white-space: pre-line;
-}
-
 #message-list {
     display: flex;
     flex-direction: column;
@@ -99,6 +88,18 @@ section p {
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #CE2029;
+}
+
+/* Poem text inside messages section */
+#message-list p {
+    font-family: 'Ranchers', cursive;
+    font-size: 1.15rem;
+    line-height: 1.2; /* compact line spacing for poems */
+    font-style: normal;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 16px;
+    white-space: pre-line; /* preserves manual line breaks */
 }
 
 .profile-photo {
