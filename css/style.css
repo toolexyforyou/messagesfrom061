@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 body {
     background-color: #CE2029;
     color: #000000;
-    font-family: 'Audiowide', cursive;
+    font-family: 'DotGothic16', monospace;
     line-height: 1.6;
     max-width: 900px;
     margin: 0 auto;
