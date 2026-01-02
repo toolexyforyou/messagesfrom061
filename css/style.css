@@ -91,6 +91,7 @@ h2 {
 p {
     font-size: 1rem;
     line-height: 1.25;
+    margin: 0 0 1em 0;
     white-space: pre-line;
 }
 
@@ -109,4 +110,15 @@ footer {
     border-top: 2px solid #CE2029;
     font-size: 0.85rem;
     text-align: center;
+}
+
+header nav a,
+#home-button,
+#home-button svg {
+    color: #000000;
+    text-decoration: none;
+}
+
+#home-button svg {
+    vertical-align: middle;
 }
