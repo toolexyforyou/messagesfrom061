@@ -1,5 +1,5 @@
 body {
-    background-color: #fefefe;
+    background-color: #ffffff;
     color: #000000;
     font-family: Arial, sans-serif;
     line-height: 1.8;
@@ -11,13 +11,13 @@ body {
 header {
     text-align: center;
     padding: 25px 0;
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 3px solid #ff0000;
 }
 
 header h1 {
     color: #ff0000;
     margin: 0;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 nav a {
@@ -37,41 +37,40 @@ section {
     background-color: #ffffff;
     border: 2px solid #ff0000;
     border-radius: 12px;
-    padding: 25px;
+    padding: 30px;
     margin: 25px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
-    font-family: Arial, sans-serif;
     color: #000000;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 section p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 h2 {
     color: #000000;
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1.6em;
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #ff0000;
+    padding: 25px 0;
+    border-top: 2px solid #ff0000;
     font-size: 0.9em;
     color: #333333;
 }
 
 @media (max-width: 600px) {
     section {
-        padding: 15px;
+        padding: 20px;
         margin: 15px 0;
     }
     nav a {
