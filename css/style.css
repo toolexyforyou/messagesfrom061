@@ -14,11 +14,10 @@ body {
 
 a {
     color: #000000;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 header {
-    text-align: center;
     padding: 32px 0;
 }
 
@@ -27,8 +26,24 @@ header h1 {
     margin: 0;
 }
 
+nav {
+    margin: 32px 0;
+}
+
 nav a {
-    margin: 0 14px;
+    display: block;
+    width: fit-content;
+    margin: 14px auto;
+    padding: 14px 28px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #f7cfd8;
 }
 
 section {
@@ -36,7 +51,7 @@ section {
     border: 2px solid #000000;
     border-radius: 10px;
     padding: 26px;
-    margin: 26px 0;
+    margin: 32px 0;
 }
 
 h2 {
@@ -48,22 +63,7 @@ section p {
     font-size: 1.1rem;
     margin-bottom: 16px;
     text-align: left;
-}
-
-footer {
-    text-align: center;
-    padding: 24px 0;
-    border-top: 2px solid #000000;
-    font-size: 0.9rem;
-}
-
-.profile-photo {
-    display: block;
-    margin: 0 auto 16px auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
+    white-space: pre-line;
 }
 
 article {
@@ -74,4 +74,20 @@ article {
 article h3 {
     font-size: 1.3rem;
     margin: 18px 0;
+}
+
+.profile-photo {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer {
+    padding: 24px 0;
+    border-top: 2px solid #000000;
+    font-size: 0.9rem;
+    text-align: center;
 }
