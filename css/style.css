@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 body {
     background-color: #CE2029;
     color: #000000;
-    font-family: 'VT323', monospace;
-    line-height: 1.7;
+    font-family: 'Audiowide', cursive;
+    line-height: 1.6;
     max-width: 900px;
     margin: 0 auto;
     padding: 24px;
@@ -16,33 +16,8 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0;
-    color: #000000;
-}
-
-#home-button {
-    display: inline-block;
-    padding: 10px 16px;
-    background-color: #CE2029;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 1.4rem;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-#home-button svg {
-    vertical-align: middle;
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-}
-
-#home-button:hover {
-    background-color: #ffffff;
-    border: 2px solid #CE2029;
 }
 
 section {
@@ -52,49 +27,39 @@ section {
     padding: 26px;
     margin: 32px 0;
     text-align: left;
-    color: #000000;
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 18px;
-    color: #000000;
 }
 
 #message-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 14px;
     margin: 24px 0;
 }
 
 #message-list a {
     display: block;
-    width: fit-content;
-    padding: 14px 28px;
+    padding: 14px 26px;
     background-color: #CE2029;
     border-radius: 10px;
     text-decoration: none;
-    text-align: center;
-    font-size: 1.2rem;
     color: #000000;
-    transition: all 0.3s ease;
+    font-size: 1.05rem;
 }
 
 #message-list a:hover {
     background-color: #ffffff;
-    color: #000000;
     border: 2px solid #CE2029;
 }
 
-#message-list p {
-    font-family: 'VT323', monospace;
-    font-size: 1.2rem;
-    line-height: 1.2;
-    text-align: left;
-    color: #000000;
-    margin-bottom: 16px;
+p {
+    font-size: 1rem;
+    line-height: 1.3;
     white-space: pre-line;
 }
 
@@ -111,7 +76,6 @@ h2 {
 footer {
     padding: 24px 0;
     border-top: 2px solid #CE2029;
-    font-size: 1rem;
+    font-size: 0.85rem;
     text-align: center;
-    color: #000000;
 }
