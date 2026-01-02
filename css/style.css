@@ -15,7 +15,7 @@ header {
 
 .title-container {
     background-color: #fefefc;
-    border: 2px solid #CE2029;
+    border: 2px solid #000000;
     border-radius: 15px;
     padding: 20px 18px;
     display: inline-block;
@@ -35,7 +35,7 @@ header h1 {
 
 section {
     background-color: #fefefc;
-    border: 2px solid #CE2029;
+    border: 2px solid #000000;
     border-radius: 15px;
     padding: 20px 18px;
     margin: 20px auto;
@@ -74,7 +74,7 @@ h2 {
 
 #message-list a:hover {
     background-color: #ffffff;
-    border: 2px solid #CE2029;
+    border: 2px solid #000000;
 }
 
 #search-bar {
@@ -102,7 +102,7 @@ p {
     object-fit: cover;
     display: block;
     margin: 0 auto 16px;
-    border: 2px solid #CE2029;
+    border: 2px solid #000000;
 }
 
 footer {
