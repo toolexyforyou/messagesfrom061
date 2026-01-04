@@ -115,7 +115,6 @@ p {
     font-size: 1rem;
     line-height: 1.1;
     margin: 0;
-    white-space: pre-line;
     text-indent: 0;
 }
 
@@ -127,6 +126,7 @@ p {
 .message p {
     line-height: 1.15;
     margin-bottom: 1.75em;
+    white-space: pre-line;
 }
 
 .profile-photo {
