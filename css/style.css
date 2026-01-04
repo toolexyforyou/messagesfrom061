@@ -104,6 +104,11 @@ p {
     margin: 0 auto;
 }
 
+.message p {
+    line-height: 1.15;
+    margin-bottom: 1.75em;
+}
+
 .profile-photo {
     width: 80px;
     height: 80px;
