@@ -15,7 +15,7 @@
 
             if (titleLineIndex >= 0) {
                 titleText = lines[titleLineIndex].replace(/^#\s*/, '');
-                lines.splice(titleLineIndex, 1); // remove title line from content
+                lines.splice(titleLineIndex, 1); 
             } else {
                 titleText = file.replace('.md', '');
             }
