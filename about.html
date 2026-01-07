@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - Messages from 061</title>
+<title>Message - Messages from 061</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,24 +19,26 @@
     </a>
   </nav>
 </header>
+
 <main>
-  <section id="about" class="paper">
-    <h2>About</h2>
-    <img src="https://github.com/toolexyforyou.png" alt="Profile photo" class="profile-photo">
-    <p>I’m @toolexyforyou, a young woman from Southern Africa. I study journalism and media at a local university. So it’s no surprise that I’ve been crazy about both consuming and creating media for as long as I can remember! I created “Messages from 061” to house the dramatic, lyric, and narrative poetry I write about different points in my life.</p>
+  <section id="message-title-container" class="grid-block">
+    <h2 id="message-title"></h2>
   </section>
+
+  <section id="message-content" class="grid-block markdown-body"></section>
+
+  <div id="message-pagination" style="text-align:center; margin:24px 0;"></div>
+  <div class="share-container" style="text-align:center; margin-bottom:24px;">
+    <button id="share-btn">Share!</button>
+  </div>
 </main>
-<section style="text-align:center; margin-top:12px;">
-  <a href="https://www.instagram.com/toolexyforyou" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-      <path d="M16 11.37a4 4 0 1 1-7.94 1.18 4 4 0 0 1 7.94-1.18z"></path>
-      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-    </svg>
-  </a>
-</section>
+
 <footer>
   <p>© 2026 toolexyforyou. All rights reserved.</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/message-loader.js"></script>
+<script src="js/message-pagination.js"></script>
 </body>
 </html>
