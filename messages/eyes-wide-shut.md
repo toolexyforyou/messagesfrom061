@@ -1,7 +1,4 @@
-<section class="message markdown-body">
-    <h2>Eyes wide shut</h2>
-    <div id="message-content"></div>
-</section>
+# Eyes wide shut
 
 I want you to know  
 it didn’t start  
