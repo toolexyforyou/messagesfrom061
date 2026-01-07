@@ -7,7 +7,7 @@ bar in town,
 
 running faster than 
 the jet-black mascara
-gushing out of her lower lashes.
+gushing out of her lashes.
 
 I rushed to her stall, 
 where she started to bawl,
