@@ -1,6 +1,7 @@
 ---
 layout: default
 title: I want to be somebody to you
+permalink: /i-want-to-be-somebody-to-you.html
 ---
 
 I wonder if you still feel me  
