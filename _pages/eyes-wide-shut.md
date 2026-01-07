@@ -1,4 +1,7 @@
-# Eyes wide shut
+---
+layout: default
+title: Eyes wide shut
+---
 
 I want you to know  
 it didn’t start  
