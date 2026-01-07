@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-
 body {
     background-color: #CE2029;
     color: #000000;
@@ -12,15 +11,12 @@ body {
     opacity: 0;
     animation: fadeIn 0.4s ease forwards;
 }
-
 @keyframes fadeIn { 
     to { opacity: 1; } 
 }
-
 header {
     padding: 32px 0;
 }
-
 .title-container {
     background-color: #fefefc;
     border: 2px solid #000000;
@@ -35,12 +31,10 @@ header {
         linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
     background-size: 20px 20px;
 }
-
 header h1 {
     font-size: 2.6rem;
     margin: 0;
 }
-
 header nav a,
 #home-button,
 #share-btn,
@@ -64,7 +58,6 @@ header nav a:hover,
     background-color: #ffffff;
     opacity: 0.8;
 }
-
 #home-button {
     display: inline-flex;
     align-items: center;
@@ -83,7 +76,6 @@ header nav a:hover,
     stroke: #000000;
     fill: currentColor;
 }
-
 section,
 .markdown-body {
     background-color: #fefefc;
@@ -98,7 +90,6 @@ section,
         linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
     background-size: 20px 20px;
 }
-
 .message {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -111,7 +102,6 @@ section,
     border-radius: 0;
     background-image: none;
 }
-
 .message .markdown-body h1:first-of-type {
     margin: 0;
     padding: 0;
@@ -121,23 +111,19 @@ section,
     background: none;
     border: none;
 }
-
 .message .markdown-body > *:not(h1:first-of-type) {
     background: none;
     border: none;
     padding: 0;
     margin: 0 0 1.5em 0;
 }
-
 #message-title {
     text-align: left;
 }
-
 h2 {
     font-size: 1.5rem;
     margin-bottom: 14px;
 }
-
 #search-bar {
     width: 100%;
     padding: 10px 14px;
@@ -148,7 +134,6 @@ h2 {
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
 }
-
 #message-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -172,7 +157,6 @@ h2 {
     background-color: #ffffff;
     border: 2px solid #000000;
 }
-
 #message-pagination a {
     color: #000000;
     background-color: #fefefc;
@@ -190,7 +174,6 @@ h2 {
 #share-btn {
     padding: 8px 16px;
 }
-
 p {
     font-size: 1rem;
     line-height: 1.3;
@@ -231,7 +214,6 @@ p {
     padding: 2px 4px;
     border-radius: 4px;
 }
-
 .profile-photo {
     width: 80px;
     height: 80px;
@@ -241,7 +223,6 @@ p {
     margin: 0 auto 16px;
     border: 2px solid #000000;
 }
-
 .social-link {
     display: inline-flex;
     align-items: center;
@@ -268,26 +249,22 @@ p {
     background-image: none;
     border: 2px solid #000000;
 }
-
 footer {
     padding: 24px 0;
     border-top: 2px solid #CE2029;
     font-size: 0.85rem;
     text-align: center;
 }
-
 a:focus-visible,
 input:focus-visible {
     outline: 2px solid #000000;
     outline-offset: 3px;
 }
-
 @media (max-width: 600px) {
     section {
         padding: 18px 14px;
     }
-    
-    #message-list {
+#message-list {
         grid-template-columns: 1fr;
         gap: 10px;
     }
