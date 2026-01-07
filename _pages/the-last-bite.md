@@ -1,4 +1,7 @@
-# The last bite
+---
+layout: default
+title: The last bite
+---
 
 She can act like it,  
 like there are no signs  
