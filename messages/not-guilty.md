@@ -1,7 +1,5 @@
 # Not guilty
 
----------------------------------------
-
 She stumbled straight 
 into the bathroom 
 of the trashiest 
