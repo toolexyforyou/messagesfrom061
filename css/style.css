@@ -5,6 +5,7 @@ body {
     font-family: 'Space Mono', monospace;
     line-height: 1.25;
     max-width: 600px;
+    width: 90%;
     margin: 0 auto;
     padding: 24px 0;
     text-align: center;
@@ -26,7 +27,7 @@ header {
     margin: 0 auto 24px auto;
     text-align: center;
     max-width: 600px;
-    width: 100%;
+    width: 90%;
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
@@ -81,7 +82,7 @@ section,
     padding: 20px 18px;
     margin: 16px auto;
     max-width: 600px;
-    width: 100%;
+    width: 90%;
     text-align: left;
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
@@ -93,7 +94,7 @@ section,
     grid-template-rows: auto 1fr;
     gap: 12px;
     max-width: 600px;
-    width: 100%;
+    width: 90%;
     margin: 16px auto;
     padding: 0;
     background: none;
@@ -103,7 +104,7 @@ section,
 }
 .message .markdown-body {
     max-width: 100%;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 .message .markdown-body h1:first-of-type {
@@ -141,6 +142,7 @@ h2 {
     gap: 12px;
     margin: 16px 0;
     max-width: 600px;
+    width: 90%;
 }
 #message-list a {
     display: block;
@@ -242,7 +244,7 @@ input:focus-visible {
     outline: 2px solid #000000;
     outline-offset: 3px;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     section {
         padding: 18px 14px;
     }
@@ -251,5 +253,13 @@ input:focus-visible {
     }
     .message {
         max-width: 100%;
+        width: 90%;
+    }
+    .title-container {
+        width: 90%;
+    }
+    section,
+    .markdown-body {
+        width: 90%;
     }
 }
