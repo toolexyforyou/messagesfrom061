@@ -95,6 +95,7 @@ section,
     grid-template-rows: auto 1fr;
     gap: 12px;
     max-width: 800px;
+    width: 100%;
     margin: 0 auto 24px auto;
     padding: 0;
     background: none;
@@ -264,20 +265,20 @@ input:focus-visible {
     section {
         padding: 18px 14px;
     }
-#message-list {
+    #message-list {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-section.paper,
-section.message {
-    display: inline-block;
-    padding: 12px 14px;
-    margin: 16px auto;
-    max-width: 600px;
-}
-section.paper p,
-.message .markdown-body > * {
-    margin: 0 0 1em 0;
-    padding: 0;
-}
+    section.paper,
+    section.message {
+        display: inline-block;
+        padding: 12px 14px;
+        margin: 16px auto;
+        max-width: 600px;
+    }
+    section.paper p,
+    .message .markdown-body > * {
+        margin: 0 0 1em 0;
+        padding: 0;
+    }
 }
