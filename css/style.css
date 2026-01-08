@@ -96,12 +96,14 @@ section,
     gap: 12px;
     max-width: 800px;
     width: 100%;
-    margin: 0 auto 24px auto;
+    margin: auto;
+    min-height: 100vh
     padding: 0;
     background: none;
     border: none;
     border-radius: 0;
     background-image: none;
+    align-content: center;
 }
 .message .markdown-body {
     max-width: 100%;
