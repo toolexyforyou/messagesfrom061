@@ -1,4 +1,4 @@
-# ☏ I want to be somebody to you ☏
+# I want to be somebody to you
 
 I hate to have to hit your line,
 asking, “Do you still feel me, 
