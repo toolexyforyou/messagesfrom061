@@ -1,4 +1,4 @@
-# Eyes wide shut
+# ☘︎ Eyes wide shut ☘︎
 
 It didn’t start in that doctor’s office:
 with her eyes wide shut,
