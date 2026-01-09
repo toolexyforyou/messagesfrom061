@@ -123,6 +123,9 @@ section,
     border-radius: 15px;
 }
 .message .markdown-body {
+    background-color: #e6f2ff;
+    padding: 12px;
+    border-radius: 8px;
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
