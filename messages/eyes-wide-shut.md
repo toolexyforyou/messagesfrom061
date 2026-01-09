@@ -8,16 +8,16 @@ with her eyes wide shut,
 her pupils blackened,
 and her eyebrows raised up.
 
-It started at 
-the blinding casino entrance,
+It started at the blinding 
+casino entrance,
 where she was shit out of luck.
 
-It started on 
-the blackjack table,
+It started on the glittery 
+blackjack table,
 where she spent her last buck.
 
-It started in 
-the dingy parking lot,
+It started in the dingy 
+parking lot,
 where she dozed off in his truck.
 
 But it didn’t start 
