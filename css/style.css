@@ -108,7 +108,7 @@ section,
     background-color: #fefefc;
     border: 2px solid #000000;
     border-radius: 15px;
-    padding: 20px;
+    padding: 16px;
     margin: 0 auto;
     max-width: 730px;
     width: 100%;
@@ -123,9 +123,12 @@ section,
     border-radius: 15px;
 }
 .message .markdown-body {
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    padding: 8px 12px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #0000aa;
+    border-radius: 12px;
+    padding: 8px;
     box-sizing: border-box;
     background-image: none;
 }
