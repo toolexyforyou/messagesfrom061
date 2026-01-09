@@ -85,8 +85,7 @@ header nav a:hover,
     fill: currentColor;
 }
 section,
-.markdown-body,
-.message {
+.markdown-body {
     background-color: #fefefc;
     border: 2px solid #000000;
     border-radius: 15px;
@@ -99,12 +98,15 @@ section,
     box-sizing: border-box;
 }
 .message {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 12px;
-    background: none;
-    border: none;
-    border-radius: 0;
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    margin: 16px auto;
+    padding: 20px;
+    background-color: #fefefc;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    box-sizing: border-box;
 }
 .message .markdown-body {
     max-width: 100%;
