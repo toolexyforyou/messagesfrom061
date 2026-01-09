@@ -8,18 +8,14 @@ When you can be another
 “you deserve better”
 by the end of the night.
 
-Tell me pretty white lies
-like, "I swear, 
-I feel the heat."
+Tell me pretty white lies.
+Lies like, "I can feel the heat."
+Lies like, "I never, ever tasted nothing so sweet."
 
-Tell me pretty white lies
-like, "I never tasted 
-nothing so sweet."
-
-When the shot 
-still rings out 
-it's my teeth that I'll bite,
+When your bullet flies out,
+it's my teeth 
+that I'll bite,
 
 saying, "Go ahead, babe, 
 disappoint me,"
-because you do it just right.
+because your aim is just right.
