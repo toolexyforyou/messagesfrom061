@@ -127,8 +127,8 @@ section,
     width: 100%;
     margin: 0 auto;
     background-color: #fefefc;
-    border-radius: 12px;
-    padding: 6px;
+    border-radius: 10px;
+    padding: 8px;
     box-sizing: border-box;
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
