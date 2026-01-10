@@ -1,6 +1,6 @@
-# I want to be somebody to you
+# Drunk dial
 
-I hate to hit your line,
+I hate to have to hit your line,
 asking, “Do you still feel me, 
 at least, some of the time?”
 
