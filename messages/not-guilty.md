@@ -10,8 +10,8 @@ the jet-black mascara
 gushing out 
 of her lashes.
 
-I rushed to the corner 
-where she crashed,
+I rushed to the corner
+where she crashed
 straight into 
 that leaking faucet.
 
