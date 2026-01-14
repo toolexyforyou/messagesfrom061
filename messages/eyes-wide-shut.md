@@ -2,7 +2,7 @@
 
 I want you to know
 it didn’t start 
-at the doctor's:
+at the doctor's office:
 
 with her eyes wide shut, 
 her pupils blackened,
@@ -21,5 +21,5 @@ dingy parking lot,
 where she dozed off in his truck.
 
 But it didn’t start 
-at the doctor’s 
+at the doctor’s office
 when her back hit the cold vinyl couch.
