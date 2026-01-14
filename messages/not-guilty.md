@@ -1,31 +1,31 @@
 # Not Guilty
 
-She stumbled right 
+She 
+stumbled right 
 into the bathroom 
-of the trashiest 
-bar in town,
+of the trashiest bar in town,
 
-running faster than 
+running 
+faster than 
 the jet-black mascara
-gushing out 
-of her lashes.
+gushing out her lashes.
 
-I rushed to the corner
+I rushed 
+to the corner 
 where she crashed
-straight into that 
-leaking faucet.
+straight into that leaking faucet.
 
 She cried, 
 “I’m sick and tired 
-of fucking up  
-every good thing that I’ve got.”
+of fucking up every 
+good thing that I’ve got.”
 
-But I didn’t never—
+But 
+I didn’t never—
 I wouldn’t ever—
-force her 
-to repent.
+force her to repent
 
-When I wasn’t a judge, 
-and I wasn’t a jury,
-and I wasn’t an executioner 
-either.
+when 
+I wasn’t the judge, 
+and I wasn’t the jury,
+and I wasn’t the executioner either.
