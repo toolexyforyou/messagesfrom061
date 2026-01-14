@@ -21,5 +21,5 @@ into the glass
 of sweetness on my tongue.
 
 Before you kissed it off
-at closing time
-to the sound of the track: “I’m Sprung”.
+at closing time to the sound 
+of the track: “I’m Sprung”.
