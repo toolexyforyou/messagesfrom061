@@ -9,10 +9,12 @@
         return;
     }
     const messages = [
+        "cookie-cutter.md",
         "drunk-dial.md",
         "eyes-wide-shut.md",
         "not-guilty.md",
         "russian-roulette.md",
+        "strawberry-daiquiri.md",
         "the-last-bite.md"
     ];
     const markdownPath = './messages/' + file;
