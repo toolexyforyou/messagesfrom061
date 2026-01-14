@@ -17,8 +17,8 @@ leaking faucet.
 
 She cried, 
 “I’m sick and tired 
-of fucking up everything 
-good that I’ve got.”
+of fucking up  
+every good thing that I’ve got.”
 
 But I didn’t never—
 I wouldn’t ever—
