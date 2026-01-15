@@ -1,4 +1,6 @@
 (async function() {
+    marked.setOptions({ breaks: true });
+
     const params = new URLSearchParams(window.location.search);
     const file = params.get('file');
     const contentContainer = document.getElementById('message-content');
@@ -46,7 +48,11 @@
             shareBtn.addEventListener('click', async () => {
                 if (navigator.share) {
                     try {
-                        await navigator.share({ title, text: "Check out this message from Messages from 061.", url: window.location.href });
+                        await navigator.share({
+                            title,
+                            text: "Check out this message from Messages from 061.",
+                            url: window.location.href
+                        });
                     } catch {}
                 } else {
                     alert("Copy this URL:\n" + window.location.href);
@@ -57,7 +63,7 @@
         document.addEventListener('keydown', e => {
             if (index < 0) return;
             if (e.key === 'ArrowLeft' && index > 0) window.location.href = `message.html?file=${messages[index-1]}`;
-            if (e.key === 'ArrowRight' && index < messages.length-1) window.location.href = `message.html?file=${messages[index+1]}`;
+            if (e.key === 'ArrowRight' && index < messages.length - 1) window.location.href = `message.html?file=${messages[index+1]}`;
         });
 
     } catch {
