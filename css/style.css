@@ -21,6 +21,7 @@ body {
     padding: 24px 0;
     opacity: 0;
     animation: fadeIn 0.4s ease forwards;
+    text-align: left;
 }
 
 @keyframes fadeIn {
@@ -96,7 +97,6 @@ header nav a:hover,
     padding: 0;
     max-width: 750px;
     margin: 16px auto;
-    text-align: left;
 }
 
 .inner-border {
@@ -104,7 +104,6 @@ header nav a:hover,
     padding: 16px;
     max-width: 730px;
     margin: 0 auto;
-    text-align: left;
 }
 
 section,
@@ -115,7 +114,6 @@ section,
     border-radius: 10px;
     box-shadow: inset 0 2px 0 rgba(255,255,255,0.3);
     background-color: #fefefc;
-    text-align: left;
 }
 
 .message {
@@ -135,7 +133,6 @@ section,
     background-size: 20px 20px;
     border: 3px solid #000000;
     box-shadow: inset 0 2px 0 rgba(255,255,255,0.3);
-    text-align: left;
 }
 
 .message .markdown-body h1:first-of-type {
@@ -229,7 +226,7 @@ h2 {
 .profile-photo {
     width: 80px;
     height: 80px;
-    border-radius: 10px;
+    border-radius: 15px;
     object-fit: cover;
     display: block;
     margin: 0 auto 16px auto;
