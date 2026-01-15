@@ -1,9 +1,9 @@
 [
-  "cookie-cutter.md",
-  "drunk-dial.md",
-  "eyes-wide-shut.md",
-  "not-guilty.md",
-  "russian-roulette.md",
-  "strawberry-daiquiri.md",
-  "the-last-bite.md"
+  {"file": "not-guilty.md", "category": "confessional"},
+  {"file": "strawberry-daiquiri.md", "category": "confessional"},
+  {"file": "drunk-dial.md", "category": "postmodern"},
+  {"file": "russian-roulette.md", "category": "postmodern"},
+  {"file": "cookie-cutter.md", "category": "symbolist"},
+  {"file": "eyes-wide-shut.md", "category": "symbolist"},
+  {"file": "the-last-bite.md", "category": "symbolist"}
 ]
