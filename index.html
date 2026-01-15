@@ -63,38 +63,32 @@
                 const messages = await res.json();
 
                 const categories = {
-                    "confessional": [],
-                    "postmodern": [],
-                    "symbolist": []
+                    "Confessional": [],
+                    "Postmodern": [],
+                    "Symbolist": []
                 };
 
                 messages.forEach(msg => {
-                    if (categories[msg.category]) categories[msg.category].push(msg.file);
+                    if (categories[msg.category]) categories[msg.category].push(msg);
                 });
 
                 for (const key in categories) {
-                    categories[key].sort((a, b) => {
-                        const aName = a.replace(/\.md$/, '').replace(/-/g,' ');
-                        const bName = b.replace(/\.md$/, '').replace(/-/g,' ');
-                        return aName.localeCompare(bName);
-                    });
+                    categories[key].sort((a, b) => a.title.localeCompare(b.title));
                 }
 
                 const createLinks = (list, containerId) => {
                     const container = document.getElementById(containerId);
-                    list.forEach(file => {
-                        const name = file.replace(/\.md$/, '').replace(/-/g,' ');
-                        const title = name.split(' ').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+                    list.forEach(msg => {
                         const a = document.createElement('a');
-                        a.href = `message.html?file=${file}`;
-                        a.textContent = title;
+                        a.href = `message.html?file=${msg.file}`;
+                        a.textContent = msg.title;
                         container.appendChild(a);
                     });
                 }
 
-                createLinks(categories.confessional, 'confessional-messages');
-                createLinks(categories.postmodern, 'postmodern-messages');
-                createLinks(categories.symbolist, 'symbolist-messages');
+                createLinks(categories["Confessional"], 'confessional-messages');
+                createLinks(categories["Postmodern"], 'postmodern-messages');
+                createLinks(categories["Symbolist"], 'symbolist-messages');
 
                 searchBar.addEventListener('input', () => {
                     const query = searchBar.value.toLowerCase();
