@@ -1,7 +1,11 @@
 # Cookie cutter
 
-She was a perfectionist,
-who wore perfectionism
+She
+was 
+a perfectionist,
+
+who wore 
+perfectionism
 as a badge of honor,
 
 cutting her 
