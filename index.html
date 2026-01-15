@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Messages from 061</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
+  
 <body>
+  
 <header>
   <div class="title-container">
     <h1>Messages from 061</h1>
@@ -15,6 +18,7 @@
     <a href="about.html">About</a>
   </nav>
 </header>
+  
 <main>
 <section id="messages" class="section-content">
   <h2>Messages</h2>
@@ -30,25 +34,46 @@
   </div>
 </section>
 </main>
+  
 <footer>
   <p>© Messages from 061. All rights reserved.</p>
 </footer>
+  
 <script>
-(function () {
-    const list = document.getElementById('message-list');
-    if (!list) return;
-    const links = Array.from(list.querySelectorAll('a'));
-    links.sort((a, b) => a.textContent.localeCompare(b.textContent))
-         .forEach(link => list.appendChild(link));
+(async function() {
+    const listContainer = document.getElementById('message-list');
     const searchBar = document.getElementById('search-bar');
-    if (!searchBar) return;
-    searchBar.addEventListener('input', () => {
-        const query = searchBar.value.toLowerCase();
-        links.forEach(link => {
-            link.style.display = link.textContent.toLowerCase().includes(query) ? 'block' : 'none';
+
+    try {
+        const res = await fetch('./js/messages.json');
+        if (!res.ok) throw new Error('Could not load messages list');
+        const messages = await res.json();
+
+        const links = messages.map(file => {
+            const name = file.replace(/-/g, ' ').replace(/\.md$/, '');
+            const title = name.split(' ').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+            const a = document.createElement('a');
+            a.href = `message.html?file=${file}`;
+            a.textContent = title;
+            listContainer.appendChild(a);
+            return a;
         });
-    });
+
+        links.sort((a, b) => a.textContent.localeCompare(b.textContent))
+             .forEach(a => listContainer.appendChild(a));
+
+        searchBar.addEventListener('input', () => {
+            const query = searchBar.value.toLowerCase();
+            links.forEach(link => {
+                link.style.display = link.textContent.toLowerCase().includes(query) ? 'block' : 'none';
+            });
+        });
+
+    } catch {
+        if (listContainer) listContainer.innerHTML = '<p>Could not load messages.</p>';
+    }
 })();
 </script>
+  
 </body>
 </html>
