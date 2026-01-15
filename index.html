@@ -35,7 +35,7 @@
         <section id="symbolist" class="outer-border">
             <div class="inner-border">
                 <h2>Symbolist</h2>
-                <p>Imagery suggesting meaning and mood.</p>
+                <p>Imagery suggesting meaning.</p>
                 <div id="symbolist-messages" class="category-list"></div>
             </div>
         </section>
@@ -56,7 +56,6 @@
 
                 const categories = {
                     "Confessional": [],
-                    "Postmodern": [],
                     "Symbolist": []
                 };
 
@@ -79,7 +78,6 @@
                 }
 
                 createLinks(categories["Confessional"], 'confessional-messages');
-                createLinks(categories["Postmodern"], 'postmodern-messages');
                 createLinks(categories["Symbolist"], 'symbolist-messages');
 
                 searchBar.addEventListener('input', () => {
