@@ -102,32 +102,28 @@ header nav a:hover,
 }
 
 section,
-.markdown-body,
-.message,
-.outer-border,
-.inner-border {
-    padding: 20px;
+.outer-border {
+    padding: 8px;
     margin: 16px auto;
     display: block;
-    max-width: 700px;
+    max-width: 750px;
     width: 100%;
     text-align: left;
+    background-color: #000000;
+    border: 4px solid #000000;
+    border-radius: 12px;
+}
+
+.inner-border,
+.message {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
     background-color: #fefefc;
     border: 4px solid #000000;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: inset 0 2px 0 rgba(255,255,255,0.3);
     background-image: linear-gradient(to top, rgba(255,255,255,0.15), transparent 50%);
-}
-
-.outer-border {
-    padding: 0;
-    max-width: 750px;
-}
-
-.inner-border {
-    padding: 16px;
-    max-width: 730px;
-    margin: 0 auto;
 }
 
 .message {
@@ -140,11 +136,11 @@ section,
     width: 100%;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 8px;
+    padding: 12px;
+    background-color: #fefefc;
     background-image:
-        linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px),
-        linear-gradient(to top, rgba(255,255,255,0.15), transparent 50%);
+        linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
     background-size: 20px 20px;
     border: 4px solid #000000;
     box-shadow: inset 0 2px 0 rgba(255,255,255,0.3);
@@ -180,7 +176,7 @@ h2 {
     margin-bottom: 16px;
     font-size: 1rem;
     border-radius: 8px;
-    border: 1px solid #CE2029;
+    border: 2px solid #000000;
 }
 
 #message-list {
@@ -356,8 +352,8 @@ input:focus-visible {
 }
 
 @media (max-width: 700px) {
-    section {
-        padding: 18px 14px;
+    section, .outer-border {
+        padding: 6px;
     }
     #message-list {
         grid-template-columns: 1fr;
