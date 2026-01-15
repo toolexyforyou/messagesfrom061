@@ -34,14 +34,14 @@ header {
 
 .title-container {
     background-color: #fefefc;
+    border: 2px solid #000000;
+    border-radius: 15px;
     padding: 20px;
     display: block;
     margin: 16px auto;
     text-align: center;
     max-width: 600px;
     width: 100%;
-    border: 2px solid #000000;
-    border-radius: 10px;
 }
 
 header h1 {
@@ -52,24 +52,44 @@ header h1 {
 header nav a,
 #home-button,
 #share-btn,
-.social-link {
+.social-link,
+#message-list a,
+.category-list a,
+section,
+.outer-border,
+.inner-border,
+.message,
+.markdown-body {
+    border: 2px solid #000000;
+    background-color: #fefefc;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+header nav a,
+#home-button,
+#share-btn,
+.social-link,
+#message-list a,
+.category-list a {
     display: inline-block;
     padding: 6px 12px;
     margin: 0 6px;
     font-family: 'Space Mono', monospace;
     cursor: pointer;
-    text-decoration: none;
-    color: #000000;
     background-color: #fefefc;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    transition: opacity 0.2s ease, background-color 0.2s ease;
+    border-radius: 8px;
 }
 
 header nav a:hover,
 #home-button:hover,
 #share-btn:hover,
-.social-link:hover {
+.social-link:hover,
+#message-list a:hover,
+.category-list a:hover {
+    background-color: #ffffff;
     opacity: 0.8;
 }
 
@@ -77,10 +97,10 @@ header nav a:hover,
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     padding: 0;
-    border-radius: 50%;
 }
 
 #home-button svg {
@@ -90,19 +110,16 @@ header nav a:hover,
 }
 
 section,
-.outer-border,
-.inner-border,
+.markdown-body,
 .message,
-.markdown-body {
+.outer-border,
+.inner-border {
     padding: 20px;
     margin: 16px auto;
     display: block;
     max-width: 700px;
     width: 100%;
     text-align: left;
-    background-color: #fefefc;
-    border: 2px solid #000000;
-    border-radius: 10px;
 }
 
 .outer-border {
@@ -130,6 +147,7 @@ section,
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 .message .markdown-body h1:first-of-type {
@@ -172,8 +190,7 @@ h2 {
     margin: 16px 0;
 }
 
-#message-list a,
-.category-list a {
+#message-list a {
     display: block;
     padding: 12px 20px;
     background-color: #CE2029;
@@ -182,18 +199,6 @@ h2 {
     color: #000000;
     font-size: 1rem;
     text-align: left;
-    margin-bottom: 8px;
-    transition: opacity 0.2s ease, background-color 0.2s ease;
-}
-
-#message-list a:hover,
-.category-list a:hover {
-    opacity: 0.8;
-}
-
-#message-list a:last-child,
-.category-list a:last-child {
-    margin-bottom: 0;
 }
 
 #message-pagination {
@@ -212,12 +217,12 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 6px 12px;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
     font-family: 'Space Mono', monospace;
+    border: 2px solid #000000;
     background-color: #fefefc;
     color: #000000;
-    border: 2px solid #000000;
 }
 
 #message-pagination a:hover,
@@ -233,8 +238,6 @@ h2 {
 
 #share-btn {
     padding: 8px 16px;
-    border: 2px solid #000000;
-    border-radius: 10px;
 }
 
 p {
@@ -285,11 +288,11 @@ p {
 .profile-photo {
     width: 80px;
     height: 80px;
-    border-radius: 10px;
+    border-radius: 50%;
     object-fit: cover;
+    border: 2px solid #000000;
     display: block;
     margin: 0 auto 16px auto;
-    border: 2px solid #000000;
 }
 
 .social-link {
@@ -297,8 +300,40 @@ p {
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
+    color: #000000;
+    background-color: #fefefc;
     border: 2px solid #000000;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+    stroke: #000000;
+    fill: none;
+}
+
+.category-list a {
+    display: block;
+    padding: 12px 20px;
+    background-color: #CE2029;
     border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 8px;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.category-list a:hover {
+    opacity: 0.8;
+}
+
+.category-list a:last-child {
+    margin-bottom: 0;
 }
 
 footer {
