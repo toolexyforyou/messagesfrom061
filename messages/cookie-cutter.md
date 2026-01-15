@@ -1,25 +1,26 @@
 # Cookie cutter
 
-She
-was 
+She was 
 a perfectionist,
-
-who wore 
-perfectionism
+who wore perfectionism
 as a badge of honor,
 
-cutting her 
-errors out 
+cutting
+her errors
+out
 like paper dolls.
 
-But when “perfect” 
-doesn’t even exist
-and done does:
+The realization 
+slapped her across the face:
+“perfect”doesn’t even exist
+but done does.
 
-she throws away
-those blunt 
-scissors, 
+So she throws
+out
+those blunt
+scissors,
 
-leaving the edges jagged, 
-to beam at her crooked 
-paper dolls.
+leaving the edges jagged,
+to beam
+at her
+crooked paper dolls.
