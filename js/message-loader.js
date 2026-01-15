@@ -14,8 +14,18 @@
         const res = await fetch('./js/messages.json');
         if (!res.ok) throw new Error('Could not load messages list');
         const messagesData = await res.json();
-        const messages = messagesData.map(m => m.file);
-        const index = messages.indexOf(file);
+
+        const categories = { "Confessional": [], "Postmodern": [], "Symbolist": [] };
+        messagesData.forEach(m => {
+            if (categories[m.category]) categories[m.category].push(m.file);
+        });
+
+        for (const key in categories) {
+            categories[key].sort((a,b) => a.localeCompare(b));
+        }
+
+        const allMessages = [...categories["Confessional"], ...categories["Postmodern"], ...categories["Symbolist"]];
+        const index = allMessages.indexOf(file);
 
         const markdownRes = await fetch(`./messages/${file}`);
         if (!markdownRes.ok) throw new Error('File not found');
@@ -26,27 +36,24 @@
         }
 
         if (paginationContainer && index >= 0) {
-            const prevLink = index > 0 ? `<a href="message.html?file=${messages[index-1]}">← Back</a>` : `<span style="opacity:0.5;">← Back</span>`;
-            const nextLink = index < messages.length-1 ? `<a href="message.html?file=${messages[index+1]}">Next →</a>` : `<span style="opacity:0.5;">Next →</span>`;
-            paginationContainer.innerHTML = `${prevLink}${nextLink}`;
+            const prevLink = index > 0 ? `<a href="message.html?file=${allMessages[index-1]}">← Back</a>` : `<span style="opacity:0.5;">← Back</span>`;
+            const nextLink = index < allMessages.length-1 ? `<a href="message.html?file=${allMessages[index+1]}">Next →</a>` : `<span style="opacity:0.5;">Next →</span>`;
+            paginationContainer.innerHTML = `<div style="display:flex; justify-content: space-between;">${prevLink}${nextLink}</div>`;
         }
 
         if (shareBtn) {
             shareBtn.addEventListener('click', async () => {
                 if (navigator.share) {
-                    try {
-                        await navigator.share({ title: file.replace('.md',''), text: "Check out this message from Messages from 061.", url: window.location.href });
-                    } catch {}
-                } else {
-                    alert("Copy this URL:\n" + window.location.href);
-                }
+                    try { await navigator.share({ title: file.replace('.md',''), text: "Check out this message from Messages from 061.", url: window.location.href }); }
+                    catch {}
+                } else { alert("Copy this URL:\n" + window.location.href); }
             });
         }
 
         document.addEventListener('keydown', e => {
             if (index < 0) return;
-            if (e.key === 'ArrowLeft' && index > 0) window.location.href = `message.html?file=${messages[index-1]}`;
-            if (e.key === 'ArrowRight' && index < messages.length-1) window.location.href = `message.html?file=${messages[index+1]}`;
+            if (e.key === 'ArrowLeft' && index > 0) window.location.href = `message.html?file=${allMessages[index-1]}`;
+            if (e.key === 'ArrowRight' && index < allMessages.length-1) window.location.href = `message.html?file=${allMessages[index+1]}`;
         });
 
     } catch {
