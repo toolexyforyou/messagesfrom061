@@ -34,14 +34,14 @@ header {
 
 .title-container {
     background-color: #fefefc;
-    border: 2px solid #000000;
-    border-radius: 15px;
     padding: 20px;
     display: block;
     margin: 16px auto;
     text-align: center;
     max-width: 600px;
     width: 100%;
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
 header h1 {
@@ -52,24 +52,42 @@ header h1 {
 header nav a,
 #home-button,
 #share-btn,
-.social-link {
-    display: inline-block;
-    color: #000000;
-    background-color: #fefefc;
+.social-link,
+#message-list a,
+.category-list a,
+section,
+.outer-border,
+.inner-border,
+.message,
+.markdown-body,
+.profile-photo {
     border: 2px solid #000000;
-    border-radius: 8px;
-    text-decoration: none;
+    border-radius: 10px;
+}
+
+header nav a,
+#home-button,
+#share-btn,
+.social-link,
+#message-list a,
+.category-list a {
+    display: inline-block;
     padding: 6px 12px;
     margin: 0 6px;
     font-family: 'Space Mono', monospace;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    background-color: #fefefc;
     transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
 header nav a:hover,
 #home-button:hover,
 #share-btn:hover,
-.social-link:hover {
+.social-link:hover,
+#message-list a:hover,
+.category-list a:hover {
     background-color: #ffffff;
     opacity: 0.8;
 }
@@ -95,15 +113,13 @@ section,
 .message,
 .outer-border,
 .inner-border {
-    background-color: #fefefc;
-    border: 2px solid #000000;
-    border-radius: 15px;
     padding: 20px;
     margin: 16px auto;
     display: block;
     max-width: 700px;
     width: 100%;
     text-align: left;
+    background-color: #fefefc;
 }
 
 .outer-border {
@@ -201,12 +217,13 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 6px 12px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-decoration: none;
     font-family: 'Space Mono', monospace;
     border: 2px solid #000000;
     background-color: #fefefc;
     color: #000000;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
 #message-pagination a:hover,
@@ -272,9 +289,8 @@ p {
 .profile-photo {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 10px;
     object-fit: cover;
-    border: 2px solid #000000;
     display: block;
     margin: 0 auto 16px auto;
 }
@@ -284,19 +300,27 @@ p {
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
-    color: #000000;
-    background-color: #fefefc;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.2s ease, opacity 0.2s ease;
 }
 
-.social-link svg {
-    width: 20px;
-    height: 20px;
-    stroke: #000000;
-    fill: none;
+.category-list a {
+    display: block;
+    padding: 12px 20px;
+    background-color: #CE2029;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 8px;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.category-list a:hover {
+    opacity: 0.8;
+}
+
+.category-list a:last-child {
+    margin-bottom: 0;
 }
 
 footer {
@@ -330,25 +354,4 @@ input:focus-visible {
         padding: 16px;
         margin: 0;
     }
-
-    .category-list a {
-    display: block;
-    padding: 12px 20px;
-    background-color: #CE2029;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 1rem;
-    text-align: left;
-    margin-bottom: 8px;
-    transition: opacity 0.2s ease, background-color 0.2s ease;
-}
-
-.category-list a:hover {
-    opacity: 0.8;
-}
-
-.category-list a:last-child {
-    margin-bottom: 0;
-}    
 }
