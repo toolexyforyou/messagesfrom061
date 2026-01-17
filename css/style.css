@@ -246,11 +246,6 @@ h2 {
     pointer-events: none;
 }
 
-.profile-container {
-    display: block;
-    padding: 16px 20px;
-}
-
 .profile-photo {
     float: right;
     width: 80px;
@@ -264,7 +259,7 @@ h2 {
 .about-text {
     overflow: hidden;
     text-align: left;
-    padding: 8px 0;
+    padding: 16px 20px;
 }
 
 .social-link {
