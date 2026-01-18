@@ -13,7 +13,7 @@ her lashes.
 I booked it 
 to the corner 
 where she crashed 
-right into that leaking faucet.
+into that leaking faucet.
 
 She cried, 
 “I’m sick and tired 
