@@ -22,5 +22,5 @@ scissors,
 
 leaving the edges jagged,
 to beam
-at her
-crooked paper dolls.
+at her crooked 
+paper dolls.
