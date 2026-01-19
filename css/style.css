@@ -112,7 +112,7 @@ section,
 .message .markdown-body {
     position: relative;
     width: 100%;
-    padding: 18px 20px;
+    padding: 18px 20px 18px 28px;
     background-color: #fefefc;
     color: #000000;
     line-height: 1.5;
@@ -124,27 +124,15 @@ section,
 }
 
 .message .markdown-body::before {
-    content: "";
+    content: "<";
     position: absolute;
-    top: 0;
-    left: -18px;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-right: 18px solid #fefefc;
-}
-
-.message .markdown-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -21px;
-    width: 0;
-    height: 0;
-    border-top: 28px solid transparent;
-    border-bottom: 28px solid transparent;
-    border-right: 21px solid #000000;
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1;
 }
 
 .message .markdown-body h1:first-of-type::before {
