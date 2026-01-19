@@ -7,7 +7,7 @@ I hate you not.
 
 But when it hits me
 three months later,
-hearing “ding”
+hearing ding
 outside the elevator,
 
 that those dull
@@ -17,7 +17,7 @@ on me again.
 
 I’ll be back in
 fight or flight,
-frantically pressing “R”
+frantically pressing R
 on the panel.
 
 Only to book it 
