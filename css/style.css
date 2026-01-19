@@ -112,7 +112,7 @@ section,
 .message .markdown-body {
     position: relative;
     width: 100%;
-    padding: 18px 20px 18px 20px;
+    padding: 18px 20px;
     background-color: #fefefc;
     color: #000000;
     line-height: 1.5;
@@ -131,9 +131,9 @@ section,
     width: 12px;
     height: 12px;
     border-left: 3px solid #000000;
-    border-top: 3px solid #000000;
-    transform: rotate(0deg);
-    background-color: transparent;
+    border-bottom: 3px solid #000000;
+    transform: rotate(45deg);
+    background-color: #fefefc;
     box-sizing: border-box;
 }
 
