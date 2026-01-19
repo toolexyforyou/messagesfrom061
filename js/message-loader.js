@@ -22,8 +22,10 @@
 
         const categories = {};
         messagesData.forEach(m => {
-            if (!categories[m.category]) categories[m.category] = [];
-            categories[m.category].push(m.file);
+            if (m.category === "Confessional" || m.category === "Symbolist") {
+                if (!categories[m.category]) categories[m.category] = [];
+                categories[m.category].push(m.file);
+            }
         });
 
         for (const key in categories) {
