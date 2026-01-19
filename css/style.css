@@ -403,6 +403,53 @@ input:focus-visible {
     }
 }
 
+@media (max-width: 600px) {
+    body {
+        width: 95%;
+        padding: 16px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    header nav a,
+    #home-button,
+    #share-btn,
+    .social-link {
+        padding: 8px 12px;
+        margin: 4px 2px;
+        font-size: 0.85rem;
+    }
+
+    #message-list a,
+    .category-list a {
+        padding: 14px 18px;
+        font-size: 0.9rem;
+    }
+
+    .message .markdown-body {
+        font-size: 0.9rem;
+        padding: 16px 18px;
+    }
+
+    .message .markdown-body h1 {
+        font-size: 1.2rem;
+    }
+
+    .message .markdown-body h2 {
+        font-size: 1.05rem;
+    }
+
+    .message .markdown-body h3 {
+        font-size: 0.95rem;
+    }
+}
+
 @media (min-width: 601px) and (max-width: 900px) {
     body {
         width: 90%;
@@ -425,6 +472,18 @@ input:focus-visible {
         font-size: 0.95rem;
         padding: 18px 20px;
     }
+
+    .message .markdown-body h1 {
+        font-size: 1.4rem;
+    }
+
+    .message .markdown-body h2 {
+        font-size: 1.2rem;
+    }
+
+    .message .markdown-body h3 {
+        font-size: 1.05rem;
+    }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
@@ -442,6 +501,18 @@ input:focus-visible {
 
     .message .markdown-body {
         font-size: 1rem;
+    }
+
+    .message .markdown-body h1 {
+        font-size: 1.6rem;
+    }
+
+    .message .markdown-body h2 {
+        font-size: 1.3rem;
+    }
+
+    .message .markdown-body h3 {
+        font-size: 1.15rem;
     }
 }
 
