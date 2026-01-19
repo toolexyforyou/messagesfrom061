@@ -103,30 +103,43 @@ section,
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 12px 0; 
+    margin: 12px 0;
     opacity: 0;
     transform: translateY(10px);
     animation: slideIn 0.3s ease forwards;
+    width: 100%;
 }
 
 .message .markdown-body {
+    position: relative;
     width: 100%;
-    max-width: 90%; 
     padding: 18px 20px;
     border-radius: 20px;
+    border: 3px solid #000000;
     background-color: #fefefc;
     color: #000000;
-    border: 3px solid #000000;
     line-height: 1.5;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    word-wrap: break-word;
     font-size: 1rem;
+    word-wrap: break-word;
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .message .markdown-body:hover {
     transform: scale(1.02);
     background-color: #ffffff;
+}
+
+.message .markdown-body::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #fefefc;
 }
 
 @keyframes slideIn {
