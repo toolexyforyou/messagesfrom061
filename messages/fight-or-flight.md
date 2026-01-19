@@ -1,4 +1,4 @@
-# The party
+# Fight or flight
 
 I hate you,
 I hate you not,
