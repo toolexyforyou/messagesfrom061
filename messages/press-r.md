@@ -23,7 +23,7 @@ on the panel.
 Only to book it 
 to a party
 filled with people
-I haven’t met:
+I've never met:
 
 thinking,
 “I’ll always land
