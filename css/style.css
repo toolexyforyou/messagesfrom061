@@ -374,39 +374,16 @@ input:focus-visible {
         padding: 16px 0;
     }
 
-    header h1 {
-        font-size: 1.8rem;
+    header {
+        padding: 24px 0;
     }
 
-    h2 {
-        font-size: 1.1rem;
+    .title-container {
+        padding: 18px;
     }
 
-    header nav a,
-    #home-button,
-    #share-btn,
-    .social-link {
-        padding: 8px 12px;
-        margin: 4px 2px;
-        font-size: 0.85rem;
-    }
-
-    #message-list a,
-    .category-list a {
-        padding: 14px 18px;
-        font-size: 0.9rem;
-    }
-
-    .message .markdown-body {
-        font-size: 0.9rem;
-        padding: 16px 18px;
-    }
-}
-
-@media (max-width: 600px) {
-    body {
-        width: 95%;
-        padding: 16px 0;
+    section {
+        padding: 18px 14px;
     }
 
     header h1 {
@@ -426,9 +403,13 @@ input:focus-visible {
         font-size: 0.85rem;
     }
 
+    #message-list {
+        padding: 0;
+    }
+
     #message-list a,
     .category-list a {
-        padding: 14px 18px;
+        padding: 16px 20px;
         font-size: 0.9rem;
     }
 
@@ -455,6 +436,18 @@ input:focus-visible {
         width: 90%;
     }
 
+    header {
+        padding: 28px 0;
+    }
+
+    .title-container {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px 18px;
+    }
+
     header h1 {
         font-size: 2.2rem;
     }
@@ -465,7 +458,7 @@ input:focus-visible {
 
     #message-list a,
     .category-list a {
-        padding: 16px 22px;
+        padding: 18px 24px;
     }
 
     .message .markdown-body {
@@ -489,6 +482,14 @@ input:focus-visible {
 @media (min-width: 901px) and (max-width: 1200px) {
     body {
         width: 85%;
+    }
+
+    header {
+        padding: 32px 0;
+    }
+
+    section {
+        padding: 22px 20px;
     }
 
     header h1 {
