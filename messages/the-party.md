@@ -20,8 +20,8 @@ fight or flight,
 frantically pressing “R”
 on the operating panel.
 
-Only to book it
-to the rooftop bar
+Only to book it 
+to a party
 filled with people
 I haven’t met:
 
