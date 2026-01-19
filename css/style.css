@@ -120,7 +120,7 @@ section,
 .message .markdown-body {
     position: relative;
     width: 100%;
-    padding: 18px 20px 18px 28px;
+    padding: 18px 20px 18px 20px;
     background-color: #fefefc;
     color: #000000;
     line-height: 1.5;
@@ -141,7 +141,7 @@ section,
     content: "";
     position: absolute;
     top: 18px;
-    left: -3px;
+    left: -15px;
     width: 12px;
     height: 12px;
     background-color: #fefefc;
