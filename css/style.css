@@ -28,6 +28,10 @@ body {
     scrollbar-color: #000000 #fefefc;
 }
 
+main {
+    flex: 1;
+}
+
 body::-webkit-scrollbar {
     width: 8px;
 }
