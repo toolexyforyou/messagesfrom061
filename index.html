@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messages from 061</title>
+    <meta name="description" content="Confessional and symbolist poetry by Lexy. Messages written from 061.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,27 +17,22 @@
         </nav>
     </header>
 
-    <main>
-        <section class="outer-border">
-            <div class="inner-border">
-                <input type="text" id="search-bar" placeholder="Search messages..." />
-            </div>
+    <main id="main">
+        <section>
+            <label for="search-bar" class="visually-hidden">Search messages</label>
+            <input type="text" id="search-bar" placeholder="Search messages...">
         </section>
 
-        <section id="confessional" class="outer-border">
-            <div class="inner-border">
-                <h2>Confessional</h2>
-                <p>Raw emotions and experiences.</p>
-                <div id="confessional-messages" class="category-list"></div>
-            </div>
+        <section id="confessional">
+            <h2>Confessional</h2>
+            <p>Raw emotions and experiences.</p>
+            <div id="confessional-messages" class="category-list"></div>
         </section>
 
-        <section id="symbolist" class="outer-border">
-            <div class="inner-border">
-                <h2>Symbolist</h2>
-                <p>Imagery suggesting meaning.</p>
-                <div id="symbolist-messages" class="category-list"></div>
-            </div>
+        <section id="symbolist">
+            <h2>Symbolist</h2>
+            <p>Imagery suggesting meaning.</p>
+            <div id="symbolist-messages" class="category-list"></div>
         </section>
     </main>
 
@@ -50,16 +46,18 @@
 
             try {
                 const res = await fetch('./js/messages.json');
-                if (!res.ok) throw new Error('Could not load messages list');
+                if (!res.ok) throw new Error();
                 const messages = await res.json();
 
                 const categories = {
-                    "Confessional": [],
-                    "Symbolist": []
+                    Confessional: [],
+                    Symbolist: []
                 };
 
                 messages.forEach(msg => {
-                    if (categories[msg.category]) categories[msg.category].push(msg);
+                    if (categories[msg.category]) {
+                        categories[msg.category].push(msg);
+                    }
                 });
 
                 for (const key in categories) {
@@ -74,10 +72,10 @@
                         a.textContent = msg.title;
                         container.appendChild(a);
                     });
-                }
+                };
 
-                createLinks(categories["Confessional"], 'confessional-messages');
-                createLinks(categories["Symbolist"], 'symbolist-messages');
+                createLinks(categories.Confessional, 'confessional-messages');
+                createLinks(categories.Symbolist, 'symbolist-messages');
 
                 searchBar.addEventListener('input', () => {
                     const query = searchBar.value.toLowerCase();
@@ -87,8 +85,8 @@
                 });
 
             } catch {
-                document.querySelectorAll('.category-list').forEach(container => {
-                    container.innerHTML = '<p>Could not load messages.</p>';
+                document.querySelectorAll('.category-list').forEach(c => {
+                    c.innerHTML = '<p>Could not load messages.</p>';
                 });
             }
         })();
